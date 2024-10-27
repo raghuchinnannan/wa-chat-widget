@@ -1,0 +1,39 @@
+{
+    "name": "wa-chat-widget",
+    "version": "1.0.0",
+    "description": "A simple WhatsApp chat widget for websites",
+    "main": "dist/wa-chat-widget.js",
+    "scripts": {
+        "build": "webpack --mode production",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "whatsapp",
+        "chat",
+        "widget",
+        "contact",
+        "whatsapp widget",
+        "whatsapp chat",
+        "whatsapp website chat"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/raghuchinnannan/wa-chat-widget.git"
+    },
+    "homepage": "https://a2plugins.com/wa-chat-widget",
+    "author": "Raghu Chinnannan <info@raghu.ch> (https://raghu.ch/)",
+    "license": "GPL-3.0-or-later",
+    "devDependencies": {
+        "@babel/core": "^7.26.0",
+        "@babel/preset-env": "^7.26.0",
+        "babel-loader": "^8.4.1",
+        "css-loader": "^5.2.7",
+        "express": "^4.21.1",
+        "style-loader": "^2.0.0",
+        "webpack": "^5.95.0",
+        "webpack-cli": "^4.10.0"
+    },
+    "bugs": {
+        "url": "https://github.com/raghuchinnannan/wa-chat-widget/issues"
+    }
+}

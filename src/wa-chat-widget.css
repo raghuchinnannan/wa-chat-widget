@@ -1,0 +1,224 @@
+/* Base styles for the widget container */
+.whatsapp-widget {
+    position: fixed;
+    z-index: 9999;
+    transition: all 0.3s ease-in-out;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  }
+  
+  /* Positioning styles */
+  .whatsapp-widget.bottom-right {
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .whatsapp-widget.bottom-left {
+    bottom: 20px;
+    left: 20px;
+  }
+  
+  .whatsapp-widget.top-right {
+    top: 20px;
+    right: 20px;
+  }
+  
+  .whatsapp-widget.top-left {
+    top: 20px;
+    left: 20px;
+  }
+  
+  /* WhatsApp button styles */
+  .whatsapp-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--widget-size, 60px);
+    height: var(--widget-size, 60px);
+    border-radius: 50%;
+    background-color: var(--widget-background, #25D366);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  /* SVG icon styles */
+  .whatsapp-button svg {
+    width: 55%;
+    height: 55%;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Hover effects */
+  .whatsapp-button:hover {
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .whatsapp-button:hover svg {
+    transform: scale(1.1);
+  }
+  
+  /* Active state */
+  .whatsapp-button:active {
+    transform: translateY(1px) scale(0.95);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Tooltip styles */
+  .tooltip {
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    line-height: 1.4;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Tooltip positions */
+  .bottom-right .tooltip,
+  .bottom-left .tooltip {
+    bottom: calc(100% + 12px);
+  }
+  
+  .top-right .tooltip,
+  .top-left .tooltip {
+    top: calc(100% + 12px);
+  }
+  
+  .bottom-right .tooltip,
+  .top-right .tooltip {
+    right: 0;
+  }
+  
+  .bottom-left .tooltip,
+  .top-left .tooltip {
+    left: 0;
+  }
+  
+  /* Tooltip arrow */
+  .tooltip::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+  }
+  
+  .bottom-right .tooltip::after,
+  .bottom-left .tooltip::after {
+    bottom: -6px;
+    border-top: 6px solid #333;
+  }
+  
+  .top-right .tooltip::after,
+  .top-left .tooltip::after {
+    top: -6px;
+    border-bottom: 6px solid #333;
+  }
+  
+  .bottom-right .tooltip::after,
+  .top-right .tooltip::after {
+    right: 20px;
+  }
+  
+  .bottom-left .tooltip::after,
+  .top-left .tooltip::after {
+    left: 20px;
+  }
+  
+  /* Show tooltip on hover */
+  .whatsapp-widget:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  
+  /* Tooltip animations based on position */
+  .bottom-right .tooltip,
+  .bottom-left .tooltip {
+    transform: translateY(-8px);
+  }
+  
+  .top-right .tooltip,
+  .top-left .tooltip {
+    transform: translateY(8px);
+  }
+  
+  /* Mobile optimization */
+  @media screen and (max-width: 768px) {
+    .whatsapp-widget {
+      --widget-size: 50px; /* Slightly smaller on mobile */
+    }
+  
+    .tooltip {
+      display: none; /* Hide tooltip on mobile */
+    }
+  
+    /* Adjust positioning for better mobile experience */
+    .whatsapp-widget.bottom-right,
+    .whatsapp-widget.bottom-left {
+      bottom: 16px;
+    }
+    
+    .whatsapp-widget.bottom-right,
+    .whatsapp-widget.top-right {
+      right: 16px;
+    }
+    
+    .whatsapp-widget.bottom-left,
+    .whatsapp-widget.top-left {
+      left: 16px;
+    }
+    
+    .whatsapp-widget.top-right,
+    .whatsapp-widget.top-left {
+      top: 16px;
+    }
+  }
+  
+  /* High contrast mode */
+  @media (prefers-contrast: high) {
+    .whatsapp-button {
+      box-shadow: 0 0 0 2px #000;
+    }
+    
+    .tooltip {
+      background-color: #000;
+      color: #fff;
+      box-shadow: none;
+    }
+    
+    .tooltip::after {
+      border-top-color: #000;
+      border-bottom-color: #000;
+    }
+  }
+  
+  /* Reduced motion preferences */
+  @media (prefers-reduced-motion: reduce) {
+    .whatsapp-widget,
+    .whatsapp-button,
+    .tooltip,
+    .whatsapp-button svg {
+      transition: none;
+    }
+    
+    .whatsapp-button:hover {
+      transform: none;
+    }
+  }
+  
+  /* Print styles */
+  @media print {
+    .whatsapp-widget {
+      display: none;
+    }
+  }

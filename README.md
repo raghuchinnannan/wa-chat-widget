@@ -1,8 +1,11 @@
 # WhatsApp Chat Widget
 
 [![npm version](https://img.shields.io/npm/v/wa-chat-widget.svg)](https://www.npmjs.com/package/wa-chat-widget)
-[![license](https://img.shields.io/npm/l/wa-chat-widget.svg)](https://github.com/raghuchinnannan/wa-chat-widget/blob/main/LICENSE)
 [![npm downloads](https://img.shields.io/npm/dm/wa-chat-widget.svg)](https://www.npmjs.com/package/wa-chat-widget)
+![commit](https://badgen.net/github/last-commit/raghuchinnannan/wa-chat-widget/master)
+![size](https://badgen.net/bundlephobia/minzip/wa-chat-widget?color=cyan)
+![hits](https://badgen.net/jsdelivr/hits/npm/wa-chat-widget?color=pink)
+
 
 A lightweight, customizable WhatsApp chat widget that adds a floating WhatsApp button to your website. When clicked, it opens a WhatsApp chat with a pre-defined message.
 
@@ -162,6 +165,13 @@ new WaChatWidget({
 - Safari (Latest)
 - Edge (Latest)
 - Opera (Latest)
+
+## License
+### Commercial license
+If you want to use this plugin to develop commercial sites, themes, projects, and applications, the Commercial license is the appropriate license. With this option, your source code is kept proprietary. [Read more about the commercial license.](https://a2plugins.com/wa-chat-widget/#license)
+
+### Open source license
+If you are creating an open source application under a license compatible with the GNU GPL license v3, you may use this project under the terms of the GPLv3.
 
 ## Author
 

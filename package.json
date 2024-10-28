@@ -1,6 +1,6 @@
 {
     "name": "wa-chat-widget",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "description": "A simple WhatsApp chat widget for websites",
     "main": "dist/wa-chat-widget.js",
     "scripts": {
@@ -22,7 +22,7 @@
     },
     "homepage": "https://a2plugins.com/wa-chat-widget",
     "author": "Raghu Chinnannan <info@raghu.ch> (https://raghu.ch/)",
-    "license": "GPL-3.0-or-later",
+    "license": "GPLv3",
     "devDependencies": {
         "@babel/core": "^7.26.0",
         "@babel/preset-env": "^7.26.0",

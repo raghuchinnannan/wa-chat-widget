@@ -41,7 +41,7 @@ or
 ## Usage
 
 > **Note:**
-> The Phone number should be entered in the internationalformat without the `+` sign. For eg: If your number is +1 234-567-9898,
+> The Phone number should be entered in the international format without the `+` sign. For eg: If your number is +1 234-567-9898,
 > then you should enter the phone number as `12345679898`.
 
 ### ES6 Module

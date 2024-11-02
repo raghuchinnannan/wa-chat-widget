@@ -40,7 +40,7 @@ or
 
 ## Usage
 
-> **Note**
+> **Note:**
 > The Phone number should be entered in the internationalformat without the `+` sign. For eg: If your number is +1 234-567-9898,
 > then you should enter the phone number as `12345679898`.
 

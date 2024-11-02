@@ -31,10 +31,18 @@ npm install wa-chat-widget
 
 ### Using CDN
 ```html
-<script src="https://unpkg.com/wa-chat-widget@1.0.0/dist/wa-chat-widget.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/wa-chat-widget@1.0.3/dist/wa-chat-widget.js"></script>
+```
+or
+```html
+<script src="https://unpkg.com/wa-chat-widget@1.0.3/dist/wa-chat-widget.js"></script>
 ```
 
 ## Usage
+
+> **Note**
+> The Phone number should be entered in the internationalformat without the `+` sign. For eg: If your number is +1 234-567-9898,
+> then you should enter the phone number as `12345679898`.
 
 ### ES6 Module
 ```javascript
@@ -48,7 +56,7 @@ const widget = new WaChatWidget({
 
 ### Script Tag
 ```html
-<script src="https://unpkg.com/wa-chat-widget@1.0.0/dist/wa-chat-widget.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/wa-chat-widget@1.0.3/dist/wa-chat-widget.js"></script>
 <script>
     const widget = new WaChatWidget({
         phoneNumber: '1234567890',
@@ -178,7 +186,7 @@ If you are creating an open source application under a license compatible with t
 Raghu Chinnannan
 - Website: [https://raghu.ch](https://raghu.ch)
 - GitHub: [@raghuchinnannan](https://github.com/raghuchinnannan)
-- Twitter: [@raghucginnannan](https://x.com/raghuchinnannan)
+- Twitter: [@raghuchinnannan](https://x.com/raghuchinnannan)
 
 ## Support
 
